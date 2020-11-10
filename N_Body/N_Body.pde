@@ -6,23 +6,23 @@ Body bodies[];
 
 void setup()
 {
-  bodies = new Body[5];
-  bodies[0] = new Body(width / 4, height / 4, 0, 10);
-  bodies[0].vec_x = 0.08; bodies[0].vec_y = -0.08;
+  bodies = new Body[2];
+  bodies[0] = new Body(width / 4, height / 2, 0, 200);
+  bodies[0].vec_x = 0.0; bodies[0].vec_y = -0.16;
   
-  bodies[1] = new Body(3 * width / 4, height / 4, 0, 10);
-  bodies[1].vec_x = 0.08; bodies[1].vec_y = 0.08;
+  bodies[1] = new Body(width / 2, height / 2, 0, 800);
+  bodies[1].vec_x = 0.0; bodies[1].vec_y = 0.04;
   
   //System.out.println(sqrt(4 * GRAVITATION / 5));
   
-  bodies[2] = new Body(width / 2, height / 2, 0, 400);
+  /*bodies[2] = new Body(width / 2, height / 2, 0, 400);
   bodies[2].vec_x = 0.0; bodies[2].vec_y = 0.0;
   
   bodies[3] = new Body(3 * width / 4, 3 * height / 4, 0, 10);
   bodies[3].vec_x = -0.08; bodies[3].vec_y = 0.08;
   
   bodies[4] = new Body(width / 4, 3 * height / 4, 0, 10);
-  bodies[4].vec_x = -0.08; bodies[4].vec_y = -0.08;
+  bodies[4].vec_x = -0.08; bodies[4].vec_y = -0.08;*/
   
   frameRate(240);
   size(1000, 1000);
@@ -31,7 +31,7 @@ void setup()
 
 void draw()
 { 
-  //background(0);
+  background(0);
   fill(255);
   stroke(255);
   
